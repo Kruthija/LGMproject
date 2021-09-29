@@ -9,9 +9,9 @@ function regform(inputText,username,phno){
     {
         alert("enter corect mobile number");
     }
-         if(inputText.value.match(validRegex) && username.value!="" && password1.value.length>5&& courses.value!=""&& phno.value.length==10)
+         if(inputText.value.match(validRegex) && username.value!="" && phno.value.length==10)
           {
-          alert("registration successfull");
+          alert("Thanx for filling the form");
           document.myform.emailtext.focus();
           document.myform.username.focus();
           document.myform.phno.focus();
@@ -19,7 +19,7 @@ function regform(inputText,username,phno){
       }
     
      else{
-         alert("registration is unsucessfull ");
+         alert("Check your details once again ");
          document.myform.emailtext.focus();
          document.myform.username.focus();
          return false;

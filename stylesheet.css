@@ -50,7 +50,7 @@ nav ul li a{
     letter-spacing:1px;
 }
 .hey{
-    color:#39bfbd;
+    color:#0c0c0c;
     font-weight:500;
     font-size:0.9rem;
     border-bottom:2px solid rgb(231, 25, 152);
@@ -59,7 +59,7 @@ nav ul li a{
 nav ul li a:hover{
     background-color:chocolate;
     color:black;
-    box-shadow:5px 10px 30px rgba(64,198,196,0.3);
+    box-shadow:5px 10px 30px rgba(13, 14, 14, 0.3);
     transition:all ease 0.3s;
 }
 .model img{
@@ -116,7 +116,7 @@ box-shadow:4px 10px 30px rgba(24,139,119,0.2);
     align-items: center;
     width: 90%;
     margin:auto auto 50px auto;
-    margin-top:-150px;
+    /* margin-top:-150px; */
 }
 .skill-text{
     width: 400px;
@@ -169,7 +169,7 @@ body .wrap{
     font-size:2.5rem ;
 }
 .wrap{
-    margin-top:30px;
+    margin-top:-150px;
     max-width: 60%;
     margin:25px  0px;
 }
@@ -191,7 +191,7 @@ body .wrap{
     content: '';
     top: 6px;
     left: 5px;
-    width: 80%;
+    width: 40%;
     height: 50%;
     background:linear-gradient(to left, burlywood, chocolate);
     border-radius:50px;
@@ -340,6 +340,15 @@ footer a{
 }
 nav .menu-btn{
     display: none;
+}
+footer .social img:hover{
+    transform: translateX(-10px);
+    box-shadow: 5px 10px 30px rgba(224, 26, 191, 0.5);
+    transition: all ease 0.3s;
+}
+#contact .contact-input  input:hover{
+    box-shadow: 5px 10px 30px rgba(8, 8, 8, 0.5);
+    transition: all ease 0.3s;  
 }
 @media (max-width:1140px){
     .content{
