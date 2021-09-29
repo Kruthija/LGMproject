@@ -1,0 +1,66 @@
+<!DOCTYPE>
+ <html lang="en-US">
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="x-UA-Compatible"content="IE-edge">
+         <meta name="viewport" content="width=device-width,initial-scale=1">
+         <title>course registration</title>
+     </head>
+     <script>
+         function regform(inputText,username,password1,courses,phno){
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            
+            //var mailformat = /^w+([\.-]?\w+)*@\w+([\.-]?w+)*(\.\w{2,3})+$/;
+            if(inputText.value.match(validRegex)){}
+            else{alert("invalid emailid")}
+            if(username.value==""){
+                alert("check username");
+            }
+            
+            if( password1.value.length<=5){
+                alert(" password length should be greater than 5");
+            }
+            if(courses.value==" "){
+                alert("you should select atleast one course");
+            }
+            if(phno.value.length<10)
+            {
+                alert("enter corect mobile number");
+            }
+                 if(inputText.value.match(validRegex) && username.value!="" && password1.value.length>5&& courses.value!=""&& phno.value.length==10)
+                  {
+                  alert("registration successfull");
+                  document.myform.emailtext.focus();
+                  document.myform.username.focus();
+                  document.myform.password1.focus();
+                  document.myform.phno.focus();
+                  document.myform.courses.focus();
+                 
+                return true;
+              }
+            
+             else{
+                 alert("registration is unsucessfull ");
+                 document.myform.emailtext.focus();
+                 document.myform.username.focus();
+                 document.myform.password1.focus();
+                 return false;
+
+             }
+         }
+          </script>
+          
+          <body onload = 'document.myform.emailtext.focus(),document.myform.username.focus(), document.myform.password1.focus(),document.myform.course.focus()'/> 
+         <form name="myform" action="#" >
+             User Name<br><input type="text" name="username"/><br><br>
+             emailID<br><input type="text" name="emailtext"/><br><br>
+             password<br><input type="password" name="password1" /><br><br>
+             Select Course<select type="text" value="" name="course">
+                 <option>web-development</option>
+                 <option >machine learning</option>
+                 <option >software development</option>
+             </select><br><br>
+             Mobile Number<br><input type="text" name="phno">
+             <br><br><input type="submit" name="submit"value="submit" onclick="regform(document.myform.emailtext,document.myform.username,document.myform.password1,document.myform.course,document.myform.phno)"/>
+         </form>
+     </body></html>

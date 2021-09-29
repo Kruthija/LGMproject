@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio  website</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+     <link rel="shortcut icon" href="images/icon-1.png">
+    <!-- using font-awesome -->
+     <script src="https://kit.fontawesome.com/c8e4d183c2.js" 
+     crossorigin="anonymous"></script>
+     <script src="main.js"></script>
+    </head>
+<body>
+    <!-- main...... -->
+   <section id="main">
+       <!-- navigation bar -->
+       <nav>
+        <!-- logo    -->
+        <a href="#" class="logo">
+           <img src="images/icon-2.png">
+        </a>
+        <!-- menu button  -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!-- menu -->
+        <ul class="menu">
+            <li> <a href="#main">Home</a></li>
+            <!-- <li> <a href="#">About</a></li> -->
+            <!-- <li> <a href="#">Education</a></li> -->
+            <li> <a href="#skills">Skills</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+        <!-- say-hey -->
+        <a href="#" class="hey">Hai!</a>
+       </nav>
+        <!-- content -->
+        <div class="content">
+            <!-- model -->
+        <div class="model">
+            <img src="./images/myimage-5.jpeg">
+        </div>
+        <!-- text -->
+        <div class="main-text">
+           <h1>Hello, I am <u> Kruthija Vennu</u></h1>
+            <p><h2>This is my Portfolio.</h2><h3>I used HTML CSS and JS to build this responsive portfolio</h3></p>
+        <!-- button -->
+        <a href="#" class="portfolio-btn">This is my Portfolio </a>      
+      </div>
+        </div>
+   </section> 
+   <!-- skills -->
+   <section id="skills">
+       <div class="skill-heading"><br><br>
+       <span><u>Other Skills</u></span>
+    <ul>
+        <li><h2>Time-management</h2></li>
+        <li><h2>Team Working Skills</h2></li>
+        <li><h2>Good Communication Skills</h2></li>
+        <li><h2>Hard Working</h2></li>
+        <li><h2>can Work under pressure</h2></li>
+    </ul></div>
+     <div class="wrap">
+         <h1>My Skills</h1>
+         <div class="bar">
+           <div class="s-box-icon"><i class="fab fa-html5"></i></div>
+            <div class="s-box-text"><strong>Hyper Text Markup Language(HTML)</strong></div>
+            <span></span>
+         </div>
+         <div class="bar">
+           <div class="s-box-icon"><i class="fas fa-file-code"></i></div>
+            <div class="s-box-text"><strong>Cascading Style Sheet(CSS)</strong></div>
+            <span></span>
+         </div>
+         <div class="bar">
+            <div class="s-box-icon"><i class="fab fa-js"></i></div>
+            <div class="s-box-text"><strong>Java Script(JS)</strong></div>
+            <span></span>
+         </div></div>
+        <!-- image -->
+        <div class="skill-img">
+            <img src="./images/skills.jpg">
+            </div>
+          </section>
+          <section id="projects">
+              <!-- proj heading -->
+             <div class="project-heading">
+                 <span>Recent Projects</span>
+                 <h3>Projects Designed by me</h3>
+                 </div>
+                <!-- project box-container -->
+                <div class="p-box-container">
+                    <!-- box1 -->
+                    <div class="project-box">
+                        <!-- img -->
+                        <img src="images/payasamlogo.jpg">
+                        <!-- stars -->
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!-- details -->
+                        <p>This contains a detailed procedure on how to make mouth watering payasam</p>
+                        <!-- button -->
+                        <a href="projects/payasam.html">Click Here</a>
+                    </div>
+                    <!-- box2 -->
+                    <div class="project-box">
+                        <!-- img2 -->
+                        <img src="images/hotellogo.webp">
+                        <!-- stars -->
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!-- details -->
+                        <p>This website contains about various kinds of hotels and the famous hotels present in India</p>
+                        <!-- button -->
+                        <a href="projects/hotel.html">Click Here</a>
+                    </div>
+                    <!-- box3 -->
+                    <div class="project-box">
+                        <!-- img -->
+                        <img src="images/formlogo.jpg">
+                        <!-- stars -->
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!-- details -->
+                        <p>This website verifies the form format i.e., it displays alert message if any entered message doesnot support the input format</p>
+                        <!-- button -->
+                        <a href="projects/form validification.html">Click Here</a>
+                    </div>
+                </div>
+                 
+          </section>
+          <!-- contact -->
+        <section id="contact">
+            <h3>For any project Colloboration</h3>
+            <!-- img -->
+            <img src="./images/contact.png">
+            <!-- heading -->
+           
+            <div class="contact-input">
+                <form name="myform" action="#" >
+                    User Name<br><input type="text" name="username"/><br><br>
+                    emailID<br><input type="text" name="emailtext"/><br><br>
+                    Mobile Number<br><input type="text" name="phno">
+                    <br><br><button type="submit" name="submit"value="submit" onclick="regform(document.myform.emailtext,document.myform.username,document.myform.phno)">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="follow-me">
+            <!-- footer -->
+            <footer>
+                <div>
+                    <a href="#">KRUTHIJA VENNU</a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/Kruthija">
+                        <img src="images/github.png" alt="" />
+                    </a>
+                    <a href="https://www.instagram.com/webby_draws/">
+                        <img src="images/instagram.png" alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/vennu-kruthija-72665921a">
+                        <img  src="images/linkedin.png" alt="" />
+                    </a>
+                </div>
+
+            </footer>
+            </section>
+        </body>
+</html>
